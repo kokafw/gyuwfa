@@ -32,4 +32,4 @@ jobs:
 
     - name: 実行
 
-      run: python3 start.py MCPE fish2.f5.si:39574 2000 21600
+      run: python3 start.py MCPE fish2.f5.si:39574 200 21600
