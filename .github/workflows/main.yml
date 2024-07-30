@@ -32,4 +32,4 @@ jobs:
 
     - name: 実行
 
-      run: python3 start.py TCP play.mcjp.love:2216 150 21600
+      run: python3 start.py UDP fish2.f5.si:25565 150 21600
