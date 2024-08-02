@@ -32,4 +32,4 @@ jobs:
 
     - name: 実行
 
-      run: python3 start.py MINECRAFT game.ssnetwork.io:50019 200 21600
+      run: python3 start.py UDP game.ssnetwork.io:50019 200 21600
