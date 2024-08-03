@@ -32,4 +32,4 @@ jobs:
 
     - name: 実行
 
-      run: python3 start.py MINECRAFT 34.97.189.173:25565 200 21600
+      run: python3 start.py UDP 160.251.205.35:19132 200 21600
